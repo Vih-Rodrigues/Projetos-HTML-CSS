@@ -1,7 +1,13 @@
 #GradientePretoVermelho {
-	height: 200px;
+	height: 150px;
 	background-color: black;
 	background-image: linear-gradient(black, red);
+}
+
+#GradienteVermelhoPreto {
+	height: 150px;
+	background-color: black;
+	background-image: linear-gradient(red, black);
 }
 
 #FundoCinza {

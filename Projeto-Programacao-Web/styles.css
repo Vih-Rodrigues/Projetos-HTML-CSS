@@ -1,0 +1,14 @@
+#GradientePretoVermelho {
+	height: 200px;
+	background-color: black;
+	background-image: linear-gradient(black, red);
+}
+
+#FundoCinza {
+	background-color:#D3D3D3;
+}
+		
+.TextoVinho {
+	color:#800000;
+	text-align:center;
+}

@@ -1,10 +1,10 @@
-#GradientePretoVermelho {
+#Cabecalho {
 	height: 150px;
 	background-color: black;
 	background-image: linear-gradient(black, red);
 }
 
-#GradienteVermelhoPreto {
+#Rodape {
 	height: 150px;
 	background-color: black;
 	background-image: linear-gradient(red, black);
@@ -13,8 +13,15 @@
 #FundoCinza {
 	background-color:#D3D3D3;
 }
-		
+
 .TextoVinho {
 	color:#800000;
 	text-align:center;
+}
+
+.SaibaMais{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }

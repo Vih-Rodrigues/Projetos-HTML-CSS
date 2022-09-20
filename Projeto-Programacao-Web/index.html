@@ -14,72 +14,76 @@
 
         <title>Fatec</title>
 
-		<style>
-			body {
-				background-image: url('FatecRP.jpg');
-				background-position: center;
-				background-repeat: no-repeat;
-			} 
-		</style>
-
     </head>
 
     <!-- body = corpo da página, guarda o que será mostrado em tela -->
-    <body style="font-family:arial">
+    <body style="font-family:arial; margin:0"; >
+
+		<div class="PaginaTotal"; style="height: 100vh; width: 100 vw; display:grid; grid-template-rows: 15% 74% 11%">
 		
-		<div id="GradientePretoVermelho" style="display": flex; flex-direction: row; align-itens: space-between;>
-	    	<!-- tag br da um Enter -->
-	    	<br>
+			<div id="Cabecalho" style="display": flex; flex-direction: row; align-itens: space-between;>
+	    		<!-- tag br da um Enter -->
+	    		<br>
 
-			<div class="LogotipoCPS" style="float:right;">
-				<right> <img src="./logo_cps_versao_br.png" style="width: 150px; height: 100.76px" /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </right>
+				<div class="LogotipoCPS" style="float:right;">
+					<right> <img src="./logo_cps_versao_br.png" style="width: 150px; height: 100.76px" /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </right>
+				</div>
+
+				<div class="LogotipoFatec" style="float:left;">
+					<left> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src="./fatec_ra_ribeirao_preto_ribeirao_preto_br.png" style="width: 200px; height: 125.99px" /> </left>
+				</div>
+
+	    		<!-- h1 = título, /h1 = marca o fim do título -->
+            		<h1 style="color:white; 
+						-webkit-text-stroke-width: 1px;
+    					-webkit-text-stroke-color: #000;
+		       			font-size: 300%;
+		       			text-align:center;
+		       			width: 1300px;
+		       			margin: auto;"
+                		><strong> Análise e Desenvolvimento<br>de Sistemas</strong>
+					</h1>
 			</div>
 
-			<div class="LogotipoFatec" style="float:left;">
-				<left> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src="./fatec_ra_ribeirao_preto_ribeirao_preto_br.png" style="width: 200px; height: 125.99px" /> </left>
+			<div class="Conteudo"; 
+			 	style="
+			 	background-image: url('FatecRP.png');
+			 	background-size: cover;
+			 	background-repeat: no-repeat;
+			 	margin: 0;
+			 	">
+
+				<div class="SaibaMais">
+					<p>
+						<a href="http://www.fatecrp.edu.br/analise-e-desenvolvimento-de-sistemas/">
+							<center> <img src="./ImagemSaibaMais.png" style="width: 200px; height: 80px"/> </center>
+						</a> 
+					</p> 
+				</div>
+
 			</div>
 
-	    	<!-- h1 = título, /h1 = marca o fim do título -->
-            	<h1 style="color:white; 
-					-webkit-text-stroke-width: 1px;
-    				-webkit-text-stroke-color: #000;
-		       		font-size: 300%;
-		       		text-align:center;
-		       		width: 1300px;
-		       		margin: auto;"
-                	><strong> Análise e Desenvolvimento<br>de Sistemas</strong>
-				</h1>
-		</div>
+        	<!-- Load external JavaScript -->
+        	<script src="scripts.js">
+			</script>
 
-		<br>
+			<div id="Rodape" style="display": flex; flex-direction: row; align-itens: space-between;>
 			
-		<div class="SaibaMais">
-			<p style="text-align:center">
-				<a href="http://www.fatecrp.edu.br/analise-e-desenvolvimento-de-sistemas/">
-					<center> <img src="./ImagemSaibaMais.png" style="width: 200px; height: 80px"/> </center>
-				</a> 
-			</p> 
-		</div>
-
-		<br>
-
-        <!-- Load external JavaScript -->
-        <script src="scripts.js"></script>
-
-		<div id="GradienteVermelhoPreto" style="display": flex; flex-direction: row; align-itens: space-between;>
+				<br>
+				<br>
 			
-			<br>
-			<br>
-			
-			<p style="color:white; 
-			   -webkit-text-stroke-width: 1px; 
-			   -webkit-text-stroke-color: #000;
-			   font-size: 150%;
-		       text-align:right;
-		       width: 1300px;
-		       margin: auto;"
-			   ><strong>Endereço:</strong> Av.Pio XII, 1255 - Vila Virginia, Ribeirão Preto - SP, 14030-250<br><strong>Telefone:</strong> (16) 3919-2320 
-			</p>
+				<p style="color:white; 
+			   			  -webkit-text-stroke-width: 1px; 
+			   			  -webkit-text-stroke-color: #000;
+			   			  font-size: 150%;
+		       			  text-align:right;
+		       			  width: 1300px;
+		       			  margin: auto;"
+			   	>
+				   <strong>Endereço:</strong> Av.Pio XII, 1255 - Vila Virginia, Ribeirão Preto - SP, 14030-250<br><strong>Telefone:</strong> (16) 3919-2320 
+				</p>
+			</div>
+
 		</div>
 
     </body>

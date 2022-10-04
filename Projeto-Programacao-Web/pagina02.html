@@ -1,36 +1,109 @@
  <!DOCTYPE html>
 <html>
     <head>
+
         <meta charset=UTF-8/>
 
-        <title>Pagina02</title>
+        <!-- Link para fazer a conexão com o aruivo CSS -->
+		<link href="styles.css" rel="stylesheet"/>
+
+		<!-- Para tornar o site responsivo -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Quem tiver a classe flex-container receberá: .flex-container -->
+        <!-- Todos os filhos de quem tiver a classe flex-container receberão: .flex-container > div -->
+
+        <style>
+
+            .flex-container {
+                display: flex;
+                flex-wrap: nowrap;
+                background-color: #4a4a4a;
+                align-itens: center;
+                height: 100%;
+                justify-content: space-around
+            }
+
+            .flex-container > div {
+                width: 33.33%;
+                margin: 0;
+                padding: auto;
+                text-align: center;
+                font-size: 20px;
+                box-sizing: box-border;
+            }
+
+            .flex-container > div:hover {
+                background-color: #fff;
+            }
+
+            .flex-container > div:hover p{
+                color: #4a4a4a;
+            }
+
+
+        </style>
+
+        <title>Saiba+</title>
+
     </head>
     
-    <body>
+    <body style="font-family:arial; margin:0";>
 
-        <h1>Bem vindo!</h1>
-        <p>Você está na página 02!</p>
+        <!-- PaginaTotal é o grid, pois recebe display:grid -->
+        <div class="PaginaTotal"; style="height: 100vh; width: 100 vw; display:grid; grid-template-rows: 15% 5% 80%">
+		
+			<div id="Cabecalho" style="display": flex; flex-direction: row; align-itens: space-between;>
 
-        <a href="index.html"> Clique aqui para voltar à *Página Inicial*</a>
+	    		<br>
 
-        <br>
-        <br>
+				<div class="LogotipoCPS" style="float:right;">
+					<right> <img src="./logo_cps_versao_br.png" style="width: 150px; height: 100.76px" /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </right>
+				</div>
 
-        <!-- Usando o arquivo .js para gerar um alerta ao abrir a página 02 -->
-        <script>
-            alert("Clique em 'OK' para continuar.");
-        </script>
+				<div class="LogotipoFatec" style="float:left;">
+					<left> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src="./fatec_ra_ribeirao_preto_ribeirao_preto_br.png" style="width: 200px; height: 125.99px" /> </left>
+				</div>	
 
-        <!-- Usando o arquivo .js para escrever texto na página 02 -->
-        <script>
-            document.write("Olá mundo!");
-        </script>
+            	<h1 style="color:white; 
+					-webkit-text-stroke-width: 1px;
+    				-webkit-text-stroke-color: #000;
+		       		font-size: 300%;
+		    		text-align:center;
+		   			width: 1300px;
+	       			margin: auto;"
+            	>
+                    <strong> Fatec Ribeirão Preto </strong>
+				</h1>
+			</div>
 
-        <!-- Usando o arquivo .js para chamar um id e retornar um texto na página 02 -->
-        <h1 id="texto">  </h1>
+            <div class="Menu">
+                
+                <div class="flex-container">
+                    
+                    <div style="color: #fff";><p>ADS</p></div>
+                    
+                    <div style="color: #fff"><p>GNI</p></div>
+                    
+                    <div style="color: #fff"><p>SB</p></div>  
 
-        <script src="scripts.js">
-        </script>
+                </div>
+
+            </div>
+
+            <div class="Corpo";>
+                
+                <br>
+                <br>
+
+                <a href="index.html"> Clique aqui para voltar à *Página Inicial*</a>
+
+                <br>
+
+            </div>
+
+        </div>
 
     </body>
+
 </html>
